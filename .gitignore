@@ -1,0 +1,4 @@
+/build
+
+# Remove auto-generated, hardware-specific configuration files
+c_cpp_properties.json
