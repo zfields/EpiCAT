@@ -1,0 +1,65 @@
+{
+    // If necessary, update the value of `esp_idf_path` to match your
+    // environment. The value provided has been selected based on the
+    // instructions provided by ESP regarding tool installation, see:
+    // https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#step-3-set-up-the-tools
+    "esp_idf_path":"${env:HOME}/esp/esp-idf",
+
+    // The tools needed for building, flashing, and debugging. These variables
+    // are for informational purposes ONLY, and should NOT need to be modified.
+    "arduino_toolchain_path":"${env:HOME}/.arduino15/packages/esp32/tools/xtensa-esp32-elf-gcc/gcc8_4_0-esp-2021r2-patch3/bin",
+    "esp_idf_tools": "${config:esp_idf_path}/tools",
+    "esp_toolchain_root":"${env:HOME}/.espressif",
+    "esp_binutils_path": "${config:esp_toolchain_root}/tools/esp32ulp-elf/2.28.51-esp-20191205/esp32ulp-elf-binutils/bin",
+    "esp_openocd_path": "${config:esp_toolchain_root}/tools/openocd-esp32/v0.11.0-esp32-20220411/openocd-esp32/bin",
+    "esp_python_path": "${config:esp_toolchain_root}/python_env/idf5.0_py3.9_env/bin",
+    "esp_toolchain_path": "${config:esp_toolchain_root}/tools/xtensa-esp32-elf/esp-2022r1-RC1-11.2.0/xtensa-esp32-elf/bin",
+
+    "esp_dev_env_path": "${config:esp_idf_tools}:${config:esp_binutils_path}:${config:esp_openocd_path}:${config:esp_python_path}:${config:esp_toolchain_path}",
+    "files.associations": {
+        "array": "cpp",
+        "atomic": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "optional": "cpp",
+        "random": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "fstream": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "cinttypes": "cpp",
+        "typeinfo": "cpp"
+    },
+}
